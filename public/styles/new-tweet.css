@@ -1,0 +1,13 @@
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(180, 180, 180);
+  font-family: 'Times New Roman', Times, serif;
+  width: 80%;
+}
+
+button {
+  background-color: #4056A1;
+  font-family: 'Bungee', cursive;
+}

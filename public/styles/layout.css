@@ -17,9 +17,55 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 120px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ nav {
+  background-color: #4056A1;
+  block-size: 120px;
+  width: 100%;
+  padding-top: 2.5em;
+  position: fixed;
+  top: 0;
+ }
+
+ spanTitle {
+  color: #ffffff;
+  background-color: #4056A1;
+  font-size: 40px;
+  font-family: 'Bungee', cursive;
+  margin: 1.5em;
+  
+ }
+
+ spanNewTweet {
+  color: #ffffff;
+  background-color: #4056A1;
+  font-size: 15px;
+  margin: 1.5em;
+  float: right;
+ }
+
+.fa-solid {
+  float: left;
+  color: red;
+ }
+
+ main {
+  width: 90%;
+  margin-left: 50px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #f4f1ec;
+ }
+
