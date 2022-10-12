@@ -1,0 +1,69 @@
+.tweet-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 7px;
+  padding: 7px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.tweet-container:hover {
+  box-shadow: 5px 5px rgb(238, 255, 0);
+
+}
+
+span {
+  position: relative;
+  right: 460px;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: end;
+}
+
+i:hover {
+  color: yellow;
+}
+
+i {
+  color: red;
+}
+
+P {
+  color: white;
+  border-bottom: solid 3px white;
+  margin-top: 2px;
+}
+
+header#tweets {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 30px;
+}
+
+pic {
+  color: white;
+}
+
+
+div1 {
+  color: white;
+  position: relative;
+  left: 500px;
+}
+
+user {
+  color: white;
+  position: relative;
+  left: 20px;
+}

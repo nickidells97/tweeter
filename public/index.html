@@ -19,6 +19,10 @@
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
     <!--Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -27,6 +31,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 <style>
   
@@ -36,10 +41,10 @@
     <nav>
       <spanTitle>tweeter</spanTitle>
       <spanNewTweet><strong>Write</strong> a new tweet <br>
-        <i class="fa-solid fa-angles-down"></i>
+        <a class="fa-solid fa-angles-down"></a>
       </spanNewTweet>
     </nav>
-    <header>
+    <header id="main">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -49,24 +54,35 @@
       </div>
   </header>
     <!-- Page-specific (main) content here -->
-    <main class="container"> 
-      <h1>Latin?</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-        <p>
-          Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...
-        </p>
+    <main class="container" id="main-container"> 
         <section class="new-tweet">
-          <h2>Compose Tweet</h2>
+          <h4>What are you humming about?</h2>
           <form method="POST" action="/tweets/">
             <label for="tweet-text"></label>
-            <textarea name="text" id="tweet-text">What are you humming about?</textarea>
+            <textarea name="text" id="tweet-text"></textarea>
             <div>
               <button type="submit">Tweet</button>
               <output name="counter" class="counter" for="tweet-text">140</output>
             </div>
           </form>
+        </section>
+        <section class="tweet-container" >
+          <article>
+            <header id="tweets">
+              <pic class="fa-sharp fa-solid fa-person"></pic>
+              <user>Billie</user>
+              <div1>@billie</div1>
+            </header>
+            <p>
+              Hello World!!!!!!!
+            </p>
+            <footer>
+              <span>10 days ago</span>
+              <i class="fa-regular fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </footer>
+          </article>
         </section>
     </main>
   </body>
