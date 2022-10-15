@@ -10,11 +10,19 @@
   padding: 7px;
   margin-top: 4px;
   margin-bottom: 10px;
+  margin-left: 9.3em;
+  margin-right: 9.3em;
+}
+
+#tweets-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .tweets-container:hover {
   box-shadow: 5px 5px rgb(238, 255, 0);
-
 }
 
 span {
