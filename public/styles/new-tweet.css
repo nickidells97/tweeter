@@ -5,8 +5,7 @@
   font-family: 'Times New Roman', Times, serif;
   font: white;
   width: 80%;
-  border: 2px solid white;
-  border-radius: 7px;
+  border: none;
   padding: 7px;
   margin-top: 5px;
 }
@@ -39,4 +38,8 @@ button {
 .counter {
   float: right;
   color: white;
+}
+
+.active {
+  color: red;
 }
