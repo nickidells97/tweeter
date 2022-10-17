@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
+    <link rel="stylesheet" href="/styles/big-screen.css" media="(min-width:1024px)"/>
+
     <!--Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -57,6 +59,12 @@
     <!-- Page-specific (main) content here -->
     <main class="container" id="main-container"> 
         <section class="new-tweet">
+          <error2 class="error-message-long-tweet">
+            Sorry, that tweet is too long!!!
+          </error2>
+          <error1 class="error-message-empty">
+            Please write a tweet!!
+          </error1>
           <h4>What are you humming about?</h2>
           <form method="POST" action="/tweets" onsubmit="return loadTweets()">
             <label for="tweet-text"></label>

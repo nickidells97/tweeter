@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
   border: 2px;
   border-style: solid;
   border-color: white;
@@ -12,13 +11,14 @@
   margin-bottom: 10px;
   margin-left: 9.3em;
   margin-right: 9.3em;
+  
 }
 
 #tweets-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 120%;
 }
 
 .tweets-container:hover {
@@ -26,16 +26,12 @@
 }
 
 span {
-  position: relative;
-  right: 460px;
   color: white;
+  float: left;
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
   gap: 8px;
-  justify-content: end;
 }
 
 i:hover {
@@ -44,6 +40,8 @@ i:hover {
 
 i {
   color: red;
+  float: right;
+  gap: 1em;
 }
 
 P {
@@ -53,25 +51,19 @@ P {
 }
 
 header#tweets {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: 30px;
+  height: 50px;
 }
-
-pic {
-  color: white;
-}
-
 
 div1 {
   color: white;
-  position: relative;
-  left: 500px;
+  float: right;
 }
 
 user {
   color: white;
-  position: relative;
-  left: 20px;
+}
+
+pic {
+  height: 100%;
+  color: white;
 }

@@ -40,6 +40,14 @@ button {
   color: white;
 }
 
-.active {
+.error-message-empty {
   color: red;
+  border: red solid 2px;
+  display: none;
+}
+
+.error-message-long-tweet {
+  color: red;
+  border: red solid 2px;
+  display: none;
 }
