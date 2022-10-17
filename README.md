@@ -16,3 +16,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots 
+
+!["A screenshot of tweeter when it is fullscreen!"](https://github.com/nickidells97/tweeter/blob/master/docs/bit-screen-tweeter.png?raw=true)
+
+!["A screenshot of tweeter when it 1024 pixels or less"](https://github.com/nickidells97/tweeter/blob/master/docs/small-screen-tweeter.png?raw=true)
