@@ -6,7 +6,6 @@
  */
 const data = [{}];
 
-
 $(document).ready(function() {
   const createTweetElement = function(tweet) {
     const timeStamp = timeago.format(tweet.created_at)
@@ -45,11 +44,16 @@ $(document).ready(function() {
 
   const loadTweets = function () {
     $.ajax({method:"GET", url:'/tweets'})
-    .then((res) => renderTweets(res));
+    .then((res) => {
+      $('#tweets-container').empty()
+      renderTweets(res)
+    } );
   };
 
   $("form").on('submit', function(event) {
     event.preventDefault();
+
+    
 
     const text = $("form").serialize();
     let input = document.getElementById("tweet-text").value;
@@ -64,16 +68,10 @@ $(document).ready(function() {
     }
     
     return $.ajax({method:"POST", url:'/tweets', data: text})
+      .then($("textarea").val(''))
       .then((res) => loadTweets())
   });
-
   
-  return loadTweets();
+  loadTweets();
 
 });
-
-
-
-
-
-

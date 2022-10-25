@@ -8,6 +8,7 @@ main {
   color: black;
   background-color: #21242b;
   border-color: #21242b;
+  z-index: -4;
  }
 
 header#main {
@@ -26,6 +27,7 @@ body {
   font-size: 18px;
   font-family: 'Source Sans Pro', sans-serif;
   margin-top: 120px;
+  z-index: -3;
 }
 
 #tweets-container {
@@ -34,6 +36,7 @@ body {
   flex-direction: column;
   width: 150%;
   margin-right: 4em;
+  z-index: -2;
 }
 
 .new-tweet {
@@ -46,4 +49,17 @@ body {
   border: none;
   padding: 7px;
   margin-top: 5px;
+  z-index: -1;
 }
+
+nav {
+  background-color: #4056A1;
+  block-size: 120px;
+  width: 100%;
+  padding-top: 2.5em;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+ }
+
+ 
