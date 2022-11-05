@@ -8,7 +8,7 @@ const data = [{}];
 
 $(document).ready(function() {
   const createTweetElement = function(tweet) {
-    const timeStamp = timeago.format(tweet.created_at)
+    const timeStamp = timeago.format(tweet.created_at);
     const $tweet = `
   <article class='tweets-container'>
   <header id="tweets">
@@ -29,7 +29,7 @@ $(document).ready(function() {
     return $tweet;
   };
 
-  const escape = function (str) {
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
@@ -42,18 +42,18 @@ $(document).ready(function() {
     });
   };
 
-  const loadTweets = function () {
+  const loadTweets = function() {
     $.ajax({method:"GET", url:'/tweets'})
-    .then((res) => {
-      $('#tweets-container').empty()
-      renderTweets(res)
-    } );
+      .then((res) => {
+        $('#tweets-container').empty();
+        renderTweets(res);
+      });
   };
 
   $("form").on('submit', function(event) {
     event.preventDefault();
 
-    
+    $('.counter').removeClass('counterRed').text(140);
 
     const text = $("form").serialize();
     let input = document.getElementById("tweet-text").value;
@@ -69,7 +69,7 @@ $(document).ready(function() {
     
     return $.ajax({method:"POST", url:'/tweets', data: text})
       .then($("textarea").val(''))
-      .then((res) => loadTweets())
+      .then((res) => loadTweets());
   });
   
   loadTweets();

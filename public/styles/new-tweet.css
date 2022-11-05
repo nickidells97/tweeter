@@ -28,8 +28,6 @@ h4 {
   color: white;
 }
 
-
-
 button {
   background-color: #4056A1;
   font-family: 'Bungee', cursive;
@@ -38,6 +36,10 @@ button {
 .counter {
   float: right;
   color: white;
+}
+
+.counterRed {
+  color: red;
 }
 
 .error-message-empty {
